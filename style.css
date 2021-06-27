@@ -44,7 +44,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.noNameContainer {
+.backgroundContainer {
   width: 100%;
   background-color: rgba(44, 44, 48, 0.9);
   background-image: url(./assets/background10.png);
@@ -55,6 +55,9 @@ body {
 .inspiration {
   padding: 10px 0;
   text-align: center;
+}
+.aboutPhoto {
+  max-width: 100%;
 }
 .entryPhoto {
   max-width: 100%;
@@ -97,8 +100,39 @@ td:nth-child(even) {
 .bioPhoto {
   width: 100px;
 }
+.bioOne {
+  margin: 10px;
+  background-color: #2c2c30;
+}
+.bioTwo {
+  margin: 10px;
+  background-color: #515153;
+}
 .position {
   color: #02807f;
+}
+.contactPage {
+  width: 100%;
+}
+.contactPage_column {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.contactPage img {
+  width: 30px;
+  padding-right: 10px;
+}
+.contactOne {
+  margin: 10px;
+  padding: 20px 20px 10px 20px;
+  background-color: #2c2c30;
+}
+.contactTwo {
+  padding: 20px;
+  margin: 10px;
+  background-color: #616164;
 }
 .socialMedia {
   padding: 10px 0;
@@ -111,6 +145,8 @@ td:nth-child(even) {
 }
 footer {
   text-align: center;
+  border-top: 2px solid #02807f;
+  margin: 10px;
 }
 @media only screen and (min-width: 768px) {
   .navBar {
@@ -130,6 +166,9 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
+  .about {
+    font-size: larger;
+  }
   .entryPhoto {
     width: 500px;
   }
@@ -137,7 +176,8 @@ footer {
     padding-left: 20px;
     padding-right: 10px;
   }
-  .bio {
+  .bioOne,
+  .bioTwo {
     display: flex;
     padding: 20px 0;
   }
@@ -145,5 +185,8 @@ footer {
     width: 100px;
     height: 100px;
     padding-right: 20px;
+  }
+  .contactPage {
+    display: block;
   }
 }
