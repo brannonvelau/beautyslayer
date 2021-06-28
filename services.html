@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./toggle.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
@@ -16,41 +17,102 @@
 <body>
   <div class="mainContainer">
     <div class="header">
-      <img class="logo" src="./assets/logoshadow.png" alt="logo">
       <div class="navBar">
-        <!-- <img class="navBar_menu" src="./assets/menu.svg"> -->
-        <div class="navBar_text">
-          <a href=index.html>HOME</a>
-        </div>
-        <div class="navBar_text">
-          <a href=services.html>SERVICES</a>
-        </div>
-        <div class="navBar_text">
-          <a href=about.html>ABOUT US</a>
-        </div>
-        <div class="emptyDiv navBar_text"></div>
-        <div class="navBar_text">
-          <a href="contact.html">CONTACT US</a>
-        </div>
-        <div class="navBar_text">
-          <a href="shop.html">SHOP</a>
-        </div>
-        <div class="navBar_text">
-          <a href="careers.html">CAREERS</a>
-        </div>
-
+        <nav class="nav">
+          <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+          <label for="nav__checkbox" class="nav__toggle">
+            <img class="menu" title="bars" width="40px" src="./assets/menu.svg">
+            <img class="close" title="times" width="40px" src="./assets/close.svg">
+          </label>
+          <ul class="nav__menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><img class="logo" src="./assets/logoshadow.png" alt="logo"></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="careers.html">CAREERS</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+          </ul>
+        </nav>
       </div>
       <!--end of navBar-->
     </div>
     <!--end of header-->
     <div class="bodyContainer">
       <div class="backgroundContainer">
-        <h3>HAIR SERVICES</h3>
-        <h3>NAIL SERCVICES</h3>
-        <h3>FACIALS</h3>
-        <h3>LASHES</h3>
-        <h3>WAXING</h3>
-        <h3>MASSAGE</h3>
+        <div class="">
+          <h1>WHAT SERVICES WE PROVIDE</h1>
+          <input type="checkbox" class="hair__checkbox" id="hair__checkbox">
+          <label for="hair__checkbox" class="hair__toggle">
+            <h3 class="title">HAIR SERVICES</h3>
+          </label>
+          <ul class="hair__menu">
+            <li>Haircut or Trim</li>
+            <li>Shampoo & Style</li>
+            <li>Color</li>
+            <li>Highlights/Lowlights</li>
+            <li>Vibrant Colors</li>
+            <li>Ombre</li>
+            <li>Balayage</li>
+            <li>Split End Mender</li>
+            <li>Color Correction</li>
+          </ul>
+
+          <input type="checkbox" class="nail__checkbox" id="nail__checkbox">
+          <label for="nail__checkbox" class="nail__toggle">
+            <h3 class="title">NAIL SERVICES</h3>
+          </label>
+          <ul class="nail__menu">
+            <li>Acrylic</li>
+            <li>Dip</li>
+            <li>Gel Polish</li>
+          </ul>
+
+          <input type="checkbox" class="facial__checkbox" id="facial__checkbox">
+          <label for="facial__checkbox" class="facial__toggle">
+            <h3 class="title">FACIAL SERVICES</h3>
+          </label>
+          <ul class="facial__menu">
+            <li>Mini Facial</li>
+            <li>Basic Facial</li>
+            <li>Facial with Enzyme</li>
+            <li>Facial with Microdermabrasion</li>
+            <li>Microdermabrasion with LightStim</li>
+          </ul>
+
+          <input type="checkbox" class="lash__checkbox" id="lash__checkbox">
+          <label for="lash__checkbox" class="lash__toggle">
+            <h3 class="title">LASH SERVICES</h3>
+          </label>
+          <ul class="lash__menu">
+            <li>Lash Extension Full Set</li>
+            <li>Lash Extension Fill</li>
+            <li>Lash Lift</li>
+            <li>Lash Tint</li>
+          </ul>
+
+          <input type="checkbox" class="wax__checkbox" id="wax__checkbox">
+          <label for="wax__checkbox" class="wax__toggle">
+            <h3 class="title">WAX SERVICES</h3>
+          </label>
+          <ul class="wax__menu">
+            <li>Underarm</li>
+            <li>Brow</li>
+            <li>Lip</li>
+            <li>Leg</li>
+          </ul>
+
+          <input type="checkbox" class="massage__checkbox" id="massage__checkbox">
+          <label for="massage__checkbox" class="massage__toggle">
+            <h3 class="title">MASSAGE SERVICES</h3>
+          </label>
+          <ul class="massage__menu">
+            <li>Half Hour</li>
+            <li>Full Hour</li>
+            <li>Hour and Half</li>
+          </ul>
+
+        </div>
       </div>
       <!--end of backgroundContainer-->
     </div>

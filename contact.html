@@ -16,30 +16,26 @@
 <body>
   <div class="mainContainer">
     <div class="header">
-      <img class="logo" src="./assets/logoshadow.png" alt="logo">
       <div class="navBar">
-        <!-- <img class="navBar_menu" src="./assets/menu.svg"> -->
-        <div class="navBar_text">
-          <a href=index.html>HOME</a>
-        </div>
-        <div class="navBar_text">
-          <a href=services.html>SERVICES</a>
-        </div>
-        <div class="navBar_text">
-          <a href=about.html>ABOUT US</a>
-        </div>
-        <div class="emptyDiv navBar_text"></div>
-        <div class="navBar_text">
-          <a href="contact.html">CONTACT US</a>
-        </div>
-        <div class="navBar_text">
-          <a href="shop.html">SHOP</a>
-        </div>
-        <div class="navBar_text">
-          <a href="careers.html">CAREERS</a>
-        </div>
+        <nav class="nav">
+          <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+          <label for="nav__checkbox" class="nav__toggle">
+            <img class="menu" title="bars" width="40px" src="./assets/menu.svg">
+            <img class="close" title="times" width="40px" src="./assets/close.svg">
+          </label>
+          <ul class="nav__menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><img class="logo" src="./assets/logoshadow.png" alt="logo"></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="careers.html">CAREERS</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+          </ul>
+        </nav>
       </div>
       <!--end of navBar-->
+
     </div>
     <!--end of header-->
 
@@ -68,7 +64,7 @@
               </div>
             </div>
             <div class="contactTwo">
-              <H3>MADILINE BLUE EYED BOMBSHELL</H3>
+              <H3>MADELINE BLUE EYED BOMBSHELL</H3>
               <div class="contactPage_column">
                 <img src="./assets/phone.png">
                 <p>Phone</p>
