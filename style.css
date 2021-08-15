@@ -1,4 +1,4 @@
-/* note for colors teal #02807f dk teal #015f61 gray #b2b2b2  */
+/* note for colors teal #008182 dk teal #025f5f gray #b4b4b4  */
 * {
   margin: 0;
   padding: 0;
@@ -57,12 +57,13 @@ body {
   padding-top: 110px;
   position: fixed;
   background-color: #2c2c30;
+  z-index: 9999;
 }
 .logo {
-  width: 210px;
+  width: 250px;
 }
 .navBar {
-  background-color: #02807f;
+  background-color: #008182;
   height: 40px;
   padding: 0 5px;
 }
@@ -78,7 +79,7 @@ body {
   background-image: url(./assets/background10.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
 }
 .inspiration {
   padding: 10px 0;
@@ -101,7 +102,7 @@ body {
   width: 150px;
   height: 40px;
   padding: 5px;
-  background-color: #02807f;
+  background-color: #025f5f;
   font-weight: 600;
   font-size: x-large;
   border-radius: 50px;
@@ -122,25 +123,46 @@ td:nth-child(even) {
   background-color: #616164;
 }
 .bioContainer {
-  border-top: 1px solid #02807f;
+  border-top: 1px solid #025f5f;
   padding: 10px 0;
 }
-.bioPhoto {
+.bioOne,
+.bioTwo {
+  margin: 10px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-rows: 50px 50px;
+  grid-template-areas:
+    "teamPhoto name name"
+    "teamPhoto position position";
+}
+.name {
+  grid-area: name;
+  padding-left: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+.teamPhoto {
+  grid-area: teamPhoto;
   width: 100px;
 }
 .bioOne {
-  margin: 10px;
   background-color: #2c2c30;
 }
 .bioTwo {
-  margin: 10px;
   background-color: #515153;
 }
 .position {
-  color: #02807f;
+  color: #008182;
+  grid-area: position;
+  padding-left: 10px;
 }
 .contactPage {
   width: 100%;
+}
+H3 {
+  text-transform: uppercase;
 }
 .contactPage_column {
   display: flex;
@@ -162,7 +184,6 @@ td:nth-child(even) {
   margin: 10px;
   background-color: #616164;
 }
-
 .socialMedia {
   padding: 10px 0;
   display: flex;
@@ -172,14 +193,62 @@ td:nth-child(even) {
   padding: 0 20px;
   width: 50px;
 }
+/* Bio pages style */
+.uniqueContainer {
+  display: grid;
+  grid-template-columns: 160px auto;
+  grid-template-rows: repeat(3);
+  grid-template-areas:
+    "bioPhoto phone"
+    "bioPhoto facebook"
+    "bioPhoto instagram";
+}
+.bioPhoto {
+  grid-area: bioPhoto;
+  height: 150px;
+}
+.phone {
+  grid-area: phone;
+}
+.facebook {
+  grid-area: facebook;
+}
+.instagram {
+  grid-area: instagram;
+}
+.phone,
+.facebook,
+.instagram {
+  display: flex;
+  align-items: center;
+}
+.phone img,
+.facebook img,
+.instagram img {
+  height: 30px;
+  padding: 5px;
+}
 footer {
   text-align: center;
-  border-top: 2px solid #02807f;
+  border-top: 2px solid #025f5f;
   margin: 10px;
+}
+.infoPage {
+  max-width: fit-content;
+  padding: 10px;
+}
+form {
+  display: inline-block;
+  text-align: right;
+}
+.information {
+  vertical-align: middle;
+  color: black;
+  margin-top: 10px;
 }
 @media only screen and (min-width: 768px) {
   .header {
-    padding-top: 135px;
+    padding-top: 140px;
   }
   .navBar {
     display: flex;
@@ -197,10 +266,10 @@ footer {
     padding: 0 7px;
   }
   .nav__menu li:nth-child(3) {
-    width: 180px;
+    width: 210px;
   }
   .nav__menu li:nth-child(5) {
-    width: 180px;
+    width: 210px;
     text-align: right;
   }
   .nav__menu li:nth-child(4) {
@@ -208,11 +277,12 @@ footer {
   }
   /* end navigation */
   .logo {
-    width: 250px;
+    width: 300px;
   }
   .bodyContainer {
     max-width: 768px;
     margin: auto;
+    padding-top: 195px;
     font-size: larger;
   }
   .noNameContainer {
@@ -234,17 +304,34 @@ footer {
     width: 400px;
     line-height: 25px;
   }
+  p {
+    font-size: larger;
+  }
   .bioOne,
   .bioTwo {
-    display: flex;
-    padding: 20px 0;
+    max-width: 760px;
+    height: 150px;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 75px 75px;
   }
-  .bioPhoto {
-    width: 100px;
-    height: 100px;
+  .teamPhoto {
+    width: 150px;
+    height: 150px;
     padding-right: 20px;
   }
   .contactPage {
     display: block;
+  }
+  .uniqueContainer {
+    grid-template-columns: 210px auto;
+  }
+  .bioPhoto {
+    height: 200px;
+  }
+  .phone img,
+  .facebook img,
+  .instagram img {
+    height: 40px;
+    padding: 10px;
   }
 }

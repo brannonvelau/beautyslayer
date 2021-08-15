@@ -20,7 +20,7 @@
   display: block;
 }
 #hair__checkbox:checked ~ label.hair__toggle .title {
-  color: #015f61;
+  color: #008182;
 }
 /* end hair */
 
@@ -45,7 +45,7 @@
   display: block;
 }
 #nail__checkbox:checked ~ label.nail__toggle .title {
-  color: #015f61;
+  color: #008182;
 }
 /* end nail */
 
@@ -70,7 +70,7 @@
   display: block;
 }
 #facial__checkbox:checked ~ label.facial__toggle .title {
-  color: #015f61;
+  color: #008182;
 }
 /* end facial */
 
@@ -95,7 +95,7 @@
   display: block;
 }
 #lash__checkbox:checked ~ label.lash__toggle .title {
-  color: #015f61;
+  color: #008182;
 }
 /* end lash */
 
@@ -120,7 +120,7 @@
   display: block;
 }
 #wax__checkbox:checked ~ label.wax__toggle .title {
-  color: #015f61;
+  color: #008182;
 }
 /* end wax */
 
@@ -145,6 +145,8 @@
   display: block;
 }
 #massage__checkbox:checked ~ label.massage__toggle .title {
-  color: #015f61;
+  color: #008182;
 }
 /* end massage */
+
+/* toggle for read mores */
