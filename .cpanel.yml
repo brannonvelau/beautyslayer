@@ -1,7 +1,7 @@
 ---
 deployment:
       tasks:
-        - export DEPLOYPATH=/home/branonvelau/public_html
+        - export DEPLOYPATH=/home/l0q2ht9e0xou/public_html
         - /bin/cp <file_name> $DEPLOYPATH
         - /bin/cp /<sub_folder>/<file_name> $DEPLOYPATH
         - /bin cp * $DEPLOYPATH 
